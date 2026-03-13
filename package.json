@@ -1,0 +1,29 @@
+{
+  "name": "php_stack_explo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "cd backend && symfony server:start",
+    "start:frontend": "cd frontend && npm start",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && composer install",
+    "install:all": "npm run install:backend && npm run install:frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joliwood/php_stack_explo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Joliwood/php_stack_explo/issues"
+  },
+  "homepage": "https://github.com/Joliwood/php_stack_explo#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
