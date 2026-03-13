@@ -54,3 +54,19 @@ coverage/
 # Temporary files
 tmp/
 temp/
+
+# --- BACKEND (Symfony) ---
+/backend/var/
+/backend/vendor/
+/backend/.env.*.local
+/backend/.env.local
+/backend/phpunit.xml.dist
+
+# --- FRONTEND (React / Vite) ---
+**/node_modules/
+/frontend/dist/
+/frontend/.eslintcache
+/frontend/npm-debug.log*
+/frontend/yarn-error.log*
+/frontend/yarn-debug.log*
+/frontend/.pnpm-debug.log*
